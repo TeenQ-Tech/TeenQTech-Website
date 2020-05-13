@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Contact Us
+    </title>
+    <link rel="icon" type="image/png" href="contact/images/page_icon.png" />
+    <link rel="stylesheet" href="contact/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!--nav section-->
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"
+          ><img src="contact/images/tti_white_logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!--contact section-->
+    <div class="contact-title">
+      <h1>Reach out to us</h1>
+      <h2>We are always available to help you out</h2>
+    </div>
+    <div class="contact-form">
+      <form
+        id="contact-form"
+        method="POST"
+        action="contact/contact-form-handler.php"
+      >
+        <input
+          name="name"
+          type="text"
+          class="form-control"
+          placeholder="Your Name"
+          required
+        />
+        <br />
+        <input
+          name="email"
+          type="email"
+          class="form-control"
+          placeholder="Your Email"
+          required
+        />
+        <br />
+        <input
+          name="phone"
+          type="tel"
+          class="form-control"
+          placeholder="Your Phone"
+          required
+        />
+        <br />
+        <textarea
+          name="message"
+          class="form-control"
+          placeholder="Message"
+          row="4"
+          required
+        ></textarea>
+        <br />
+        <input type="submit" class="form-control submit" value="SEND MESSAGE" />
+      </form>
+    </div>
+  </body>
+</html>
