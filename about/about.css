@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -49,6 +50,214 @@ body {
 
 .navbar-toggler {
     outline: none !important;
+}
+
+/*-----------------overview section----------------*/
+
+#overview {
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.about-section {
+    background: url(../about/images/about_back2.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 50px;
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.2);
+}
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text {
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px) {
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-section {
+        background-size: 100%;
+        padding: 100px, 40px;
+    }
+    .inner-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-section {
+        padding: 0;
+    }
+    .inner-container {
+        padding: 60px;
+    }
+}
+
+/*-----------------team section----------------*/
+
+#team {
+    margin: 50px 0;
+    padding: 0;
+}
+
+#team .title::before {
+    content: "";
+    background: #056305;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+#team .title::after {
+    content: "";
+    background: #056305;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+
+#team .row {
+    background: #056305;
+    width: 80%;
+    margin: 4% auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#team .col {
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-basis: 25%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+#team .col img {
+    width: 100% !important;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#team .col p {
+    margin: 20px 0;
+}
+
+#team .social-link .fa {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #fff;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#team .social-link .fa:hover {
+    background: #fff;
+    color: #056305;
+    transform: translateY(-7px);
+}
+
+#team .col:hover img {
+    transform: scale(1.1);
+}
+
+#team .col span {
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #008200;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+#team .col .arrow {
+    right: unset;
+    left: 0;
+    border-right: 20px solid transparent;
+    border-left: 15px solid #008200;
+}
+
+@media screen and (max-width:770px) {
+    #team .row {
+        width: 95%;
+    }
+    #team .col {
+        flex-basis: 50%;
+        font-size: 14px;
+    }
+    #team .social-link .fa {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #team .row .col:nth-child(1) {
+        order: 1;
+    }
+    #team .row .col:nth-child(2) {
+        order: 2;
+    }
+    #team .row .col:nth-child(3) {
+        order: 5;
+    }
+    #team .row .col:nth-child(4) {
+        order: 6;
+    }
+    #team .row .col:nth-child(5) {
+        order: 3;
+    }
+    #team .row .col:nth-child(6) {
+        order: 4;
+    }
+    #team .row .col:nth-child(7) {
+        order: 7;
+    }
+    #team .row .col:nth-child(8) {
+        order: 8;
+    }
 }
 
 /*-----------------footer section----------------*/
