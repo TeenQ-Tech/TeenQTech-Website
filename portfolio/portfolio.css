@@ -51,6 +51,64 @@ body {
     outline: none !important;
 }
 
+/*-----------------portfolio section--------------*/
+
+#portfolio {
+    margin-bottom: 120px;
+}
+
+#portfolio .portfolio-items-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+#portfolio .portfolio-item-wrapper {
+    position: relative !important;
+}
+
+#portfolio .portfolio-img-background {
+    height: 280px;
+    width: 100% !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#portfolio .img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#portfolio .logo-wrapper img {
+    width: 50%;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#portfolio .img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+#portfolio .img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: #14a514;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
 /*-----------------footer section----------------*/
 
 #footer {

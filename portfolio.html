@@ -59,6 +59,177 @@
       </nav>
     </section>
 
+    <!--portfolio section-->
+    <section id="portfolio">
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/coding.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/tti_white_logo.png" />
+              </div>
+              <div class="subtitle">
+                We built the TeenQ Tech Website from ground up.
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/unilag_senate.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/unilag_logo.png" />
+              </div>
+              <div class="subtitle">
+                The Unilag MBA mobile app provides a central platform for
+                academic and social activities.
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/students.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/campus_rush_lag.png" />
+              </div>
+              <div class="subtitle">
+                Campus Rush Unilag is a social mobile platform with features
+                such as, feed system, material bucket, e.t.c.
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/campus_rush.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/campus_rush_ng.png" />
+              </div>
+              <div class="subtitle">
+                Campus Rush NG is a national version of the Campus Rush Unilag
+                with more robust features.
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/dominos.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/dominos.png" />
+              </div>
+              <div class="subtitle">
+                Dominos Pizza Nigeria Pizza ordering and delivery mobile app.
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/cakes.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/cakes.png" />
+              </div>
+              <div class="subtitle">
+                Cakes and Cream confectionaries mobile app for ordering
+                products.
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/marketting.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/cowry.png" />
+              </div>
+              <div class="subtitle">
+                Naija Cowry is a fintech solution that makes transactions of low
+                amount easier and faster.
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/menorah_farms.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/menorah_farms.png" />
+              </div>
+              <div class="subtitle">
+                Menorah Farms is a farm investment platform that leverages on
+                crowd funding.
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/nanny_express.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/nanny_xpress.png" />
+              </div>
+              <div class="subtitle">
+                Nanny Express is a platform that digitizes the hiring or nannies
+                and other home service providers.
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/lspba.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/travel.png" />
+              </div>
+              <div class="subtitle">
+                LSPBA is a travel and tour mobile platform for the Pilgrimage
+                Board of Lagos State
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(portfolio/images/timer.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="portfolio/images/logos/asas.png" />
+              </div>
+              <div class="subtitle">
+                A desktop software for task management and location based
+                employee attendance.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--footer section-->
     <section id="footer">
       <img src="portfolio/images/wave.png" class="footer-img" />
@@ -93,4 +264,15 @@
       </div>
     </section>
   </body>
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        portfolioItem.childNodes[1].classList.add("img-darken");
+      });
+      portfolioItem.addEventListener("mouseout", () => {
+        portfolioItem.childNodes[1].classList.remove("img-darken");
+      });
+    });
+  </script>
 </html>
