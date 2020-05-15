@@ -184,6 +184,20 @@ body {
     transform: rotate(360deg);
 }
 
+@media screen and (max-width:770px) {
+    #services .row {
+        margin: 50px 5px;
+    }
+    .main {
+        width: 100%;
+        margin-top: 120px;
+        min-height: 380px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+}
+
 /*-----------------footer section----------------*/
 
 #footer {

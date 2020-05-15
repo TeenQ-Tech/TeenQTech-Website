@@ -109,6 +109,20 @@ body {
     filter: brightness(10%);
 }
 
+@media screen and (max-width:1000px) {
+    #portfolio .portfolio-items-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media screen and (max-width:770px) {
+    #portfolio .portfolio-items-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+}
+
 /*-----------------footer section----------------*/
 
 #footer {
