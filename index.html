@@ -225,8 +225,15 @@
           </div>
           <div class="col-md-4 footer-box">
             <p><b>SUBSCRIBE TO NEWSLETTER</b></p>
-            <input type="email" class="form-control" placeholder="Your Email" />
-            <button type="button" class="btn btn-primary">Subscribe</button>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Your Email"
+              id="userEmail"
+            />
+            <button type="button" class="btn btn-primary" id="subscribBtn">
+              Subscribe
+            </button>
             <div id="subscribedAlert" class="alert alert-primary" role="alert">
               Subscribed
             </div>
@@ -237,4 +244,38 @@
       </div>
     </section>
   </body>
+  <script>
+    var theEmail = document.getElementById("userEmail").value;
+
+    document
+      .getElementById("subscribBtn")
+      .addEventListener("click", function () {
+        //api call
+        fetch("https://www.teenqtech.com/api/public/createuser", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: theEmail,
+            ip_address: "192.168.222.254",
+          }),
+        }).then((res) => {
+          return res.json();
+          console.log(res);
+        });
+        // setTimeout(function () {
+        //   clearAlert();
+        // }, 3000);
+      });
+
+    function showAlert(theMessage) {
+      document.getElementById("subscribedAlert").innerHTML = theMessage;
+      document.getElementById("subscribedAlert").style.display = "block";
+    }
+
+    function clearAlert() {
+      document.getElementById("subscribedAlert").style.display = "none";
+    }
+  </script>
 </html>

@@ -206,7 +206,7 @@ body {
 }
 
 .testimonials p {
-  background: #F2F5FC;
+  background: #f2f5fc;
   border-radius: 13px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
   padding: 5px;
@@ -283,6 +283,7 @@ body {
   border-radius: 10px;
   margin-top: 30px;
   background: #fff;
+  border: 1px solid #fff;
   color: #056305;
   font-size: 20px;
   font-weight: 500;
@@ -306,14 +307,15 @@ hr {
 }
 
 .alert-primary {
-  max-width: 250px;
-  font-size: 17px;
-  font-weight: 600 !important;
+  max-width: 300px;
+  font-size: 14px;
+  font-weight: 500 !important;
   text-align: center;
-  color: #056305 !important;
+  color: #fff !important;
   margin: 20px 0;
   background: #fff !important;
-  border: 5px solid lightgreen !important;
-  border-radius: 7px;
+  border: 1px solid #fff !important;
+  border-radius: 10px;
   display: none;
+  background-color: #056305 !important;
 }

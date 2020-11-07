@@ -4,201 +4,203 @@
 /*----------------general section----------------*/
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Baloo 2" !important;
+  font-family: "Baloo 2" !important;
 }
 
 /*----------------nav section----------------*/
 
 #nav-bar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar {
-    background-image: linear-gradient(to right, #008200, #056305);
-    padding: 0 !important;
+  background-image: linear-gradient(to right, #008200, #056305);
+  padding: 0 !important;
 }
 
 .navbar-brand img {
-    height: 50px;
-    padding-left: 20px;
-    margin: 5px 0;
+  height: 50px;
+  padding-left: 20px;
+  margin: 5px 0;
 }
 
 .navbar-nav li {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .navbar-nav li a {
-    color: #fff !important;
-    font-weight: 600;
-    float: right;
-    text-align: left;
+  color: #fff !important;
+  font-weight: 600;
+  float: right;
+  text-align: left;
 }
 
 .fa-bars {
-    color: #fff;
-    font-size: 30px !important;
+  color: #fff;
+  font-size: 30px !important;
 }
 
 .navbar-toggler {
-    outline: none !important;
+  outline: none !important;
 }
 
 /*-----------------portfolio section--------------*/
 
 #portfolio {
-    margin-bottom: 120px;
+  margin-bottom: 120px;
 }
 
 #portfolio .portfolio-items-wrapper {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
 }
 
 #portfolio .portfolio-item-wrapper {
-    position: relative !important;
+  position: relative !important;
 }
 
 #portfolio .portfolio-img-background {
-    height: 280px;
-    width: 100% !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 280px;
+  width: 100% !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #portfolio .img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #portfolio .logo-wrapper img {
-    width: 50%;
-    font-weight: 600;
-    margin-bottom: 20px;
+  width: 50%;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 #portfolio .img-text-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 600;
-    color: transparent;
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
 }
 
 #portfolio .img-text-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: #14a514;
+  font-weight: 600;
+  color: #14a514;
 }
 
 .img-darken {
-    transition: 1s;
-    filter: brightness(10%);
+  transition: 1s;
+  filter: brightness(10%);
 }
 
-@media screen and (max-width:1000px) {
-    #portfolio .portfolio-items-wrapper {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-    }
+@media screen and (max-width: 1000px) {
+  #portfolio .portfolio-items-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
 
-@media screen and (max-width:770px) {
-    #portfolio .portfolio-items-wrapper {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-    }
+@media screen and (max-width: 770px) {
+  #portfolio .portfolio-items-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /*-----------------footer section----------------*/
 
 #footer {
-    background-image: linear-gradient(to right, #008200, #056305);
-    color: #fff;
+  background-image: linear-gradient(to right, #008200, #056305);
+  color: #fff;
 }
 
 .footer-img {
-    width: 100%;
+  width: 100%;
 }
 
 .footer-box {
-    padding: 20px;
+  padding: 20px;
 }
 
 .footer-box img {
-    width: 120px;
-    margin-bottom: 20px;
+  width: 120px;
+  margin-bottom: 20px;
 }
 
 .footer-box .fa {
-    margin-right: 7px;
-    font-size: 25px;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    padding-top: 7px;
-    border-radius: 50%;
-    background-image: linear-gradient(to right, #008200, #056305);
+  margin-right: 7px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #008200, #056305);
 }
 
 .footer-box .form-control {
-    box-shadow: none !important;
-    border: none;
-    border-radius: 3px;
-    margin-top: 25px;
-    max-width: 250px;
+  box-shadow: none !important;
+  border: none;
+  border-radius: 3px;
+  margin-top: 25px;
+  max-width: 250px;
 }
 
 .footer-box .btn-primary {
-    box-shadow: none !important;
-    border: none;
-    border-radius: 10px;
-    margin-top: 30px;
-    background: #fff;
-    color: #056305;
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.3s;
+  box-shadow: none !important;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #056305;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .footer-box .btn-primary:hover {
-    border-radius: 10px;
-    border: 1px solid #fff;
-    background: #056305;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: #056305;
 }
 
 hr {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .copyright {
-    margin-bottom: 0;
-    padding-bottom: 20px;
-    text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .alert-primary {
-    max-width: 250px;
-    font-size: 17px;
-    font-weight: 600 !important;
-    text-align: center;
-    color: #056305 !important;
-    margin: 20px 0;
-    background: #fff !important;
-    border: 5px solid lightgreen !important;
-    border-radius: 7px;
-    display: none;
+  max-width: 300px;
+  font-size: 14px;
+  font-weight: 500 !important;
+  text-align: center;
+  color: #fff !important;
+  margin: 20px 0;
+  background: #fff !important;
+  border: 1px solid #fff !important;
+  border-radius: 10px;
+  display: none;
+  background-color: #056305 !important;
 }
